@@ -1,0 +1,102 @@
+ <!DOCTYPE html>  
+<html>
+
+<head>
+    <title>second web</title>
+</head>
+
+<body>
+        <!-- <input id="neg" type="text"/>
+        <h1 id="hariu"></h1>
+        <button onclick="password(document.getElementById('neg').value)">password</button> -->
+
+        <script>
+                
+
+                // let pass;
+                // let uldegdel=0;
+
+                
+
+                // while(pass !="123"){
+                //         pass=prompt("ta nuuts ugee oruulna uu");
+                //         if(pass==123){
+                //         while(true){
+                //                let command=prompt("1 2 3 4");
+                //                if (command==1){
+                //                 orlogo();
+                //                } else if (command==2){
+                //                 zarlaga();
+                //                } else if (command==3){
+                //                 uldegdelHarah();
+                //                } else if (command==4){
+                //                 break;
+                //                } else if(command==""){
+                //                 alert("hooson utga");
+                //                }
+                //         }
+                //         }
+                // }
+
+                // function orlogo() {
+                //         let o=parseInt(prompt("ta orlogo oruulah mungun dungee oruulna uu..."));
+                //         uldegdel+=o;
+                // }
+                // function zarlaga() {
+                //         let z=prompt("ta zarlaga gargah mungun dungee oruulna uu...");
+                        
+                //         if(z>=uldegdel){
+                //                 alert("uldegdel hureltsehgui"); 
+                //         } else if(z<uldegdel) {
+                //                 uldegdel=uldegdel-z-100;
+                //         } 
+
+                // }
+        
+                // function uldegdelHarah() {
+                //         alert("Tanii dansnii uldegdel "+ uldegdel);
+                // }
+               
+        
+                        // let arr=["medeelliin system", "program hangamj", "NBB", "Tatvar", "Emch"];
+                        // alert(arr);
+                        // arr.unshift("basgh")
+                        // alert(arr);
+                      
+                        let arr=[];
+                        let min = 100;
+                        let max = 0;
+                        let niilber=0;
+                        let maxIndex=0;
+                        let minIndex=0;
+                        for (let i=0; i<10; i++){
+                                let randomToo=Math.floor(Math.random()*100+1);
+                                arr.push(randomToo);
+                                if(arr[i]<min){
+                                        min=arr[i];
+                                        minIndex=i;
+                                }
+                                else if(arr[i]>max){
+                                        max=arr[i];
+                                        maxIndex=i;
+                                }
+
+                                niilber=niilber+randomToo;
+
+                        
+
+                                
+
+                        }
+
+
+                        
+                        
+
+                        alert(arr+ "\n" + "Ih too: " + max + "\n" + "Baga too + " + min + "\n" + "niilber too: " + niilber + "\n" + bairSoli);
+
+        </script>
+
+    </body>
+
+</html>
