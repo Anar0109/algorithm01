@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LAB 6</title>
+ 
+</head>
+<body>
+
+<style>
+    .tomDiv div{
+        background-color: aqua;
+        width: 300px;
+        height: 400px;
+        overflow: hidden;
+        padding: 10px;
+        margin: 15px;
+        float: left;
+        border-radius: 20px;
+        border: 2px solid green ; 
+        }
+</style>
+
+<div id="div" class="tomDiv">
+
+    
+
+
+</div>
+
+</body>
+<script>
+    let div=document.getElementById("div");
+    fetch("https://jsonplaceholder.typicode.com/photos").then(
+        res =>{
+            if(!res.ok){
+                throw new Error("Suljeenii aldaa gargalaa")
+            } else{
+                return res.json();
+            }
+        }
+    ).then(
+        data =>{       
+                
+                data.forEach(element=>{
+                for(let i=1; i<10; i++){
+                let newDiv=document.createElement("div");
+                newDiv.innerHTML=`<h1>${element.id}</h1>
+                <p>${element.title}</p><img src="${element.url}"/>
+                `;
+                div.appendChild(newDiv); 
+            }
+            })
+        }
+    )
+</script>
+
+</html>
